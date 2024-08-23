@@ -12,11 +12,15 @@ body {
 .countdown-label {
     display: block;
     font-weight: lighter;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for text */
 }
 
 .h1 {
     font-size: 48px; /* Increased font size for larger text */
     margin-bottom: 20px; /* Increased margin for spacing */
+    background-color: rgb(105, 103, 102); /* Added background color for a sleek look */
+
+
 }
 .countdown-item {
     text-align: center;
