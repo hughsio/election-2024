@@ -24,7 +24,7 @@ function updateCountdown() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const apiKey = 'ISOr4v9ufq8OH0-8Ss_UYMq9p4-73vWbpFTYVFfq_II';
-    const url = `https://api.unsplash.com/photos/random?client_id=${apiKey}&query=America&orientation=landscape`;
+    const url = `https://api.unsplash.com/photos/random?client_id=${apiKey}&query=American+Politics&orientation=landscape`;
 
     fetch(url)
         .then(response => response.json())
