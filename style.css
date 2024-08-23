@@ -1,0 +1,306 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: rgb(175, 174, 174);
+}
+
+.countdown-label {
+    display: block;
+    font-weight: lighter;
+}
+
+.h1 {
+    font-size: 48px; /* Increased font size for larger text */
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+.countdown-item {
+    text-align: center;
+    margin: 0 15px; /* Increased margin for spacing */
+    font-size: 36px; /* Increased font size for larger text */
+    padding-top: none; /* Removed padding for a sleek look */
+}
+
+.counter-type h1 {
+    /* Add a border to the h1 tags */
+    border: 2px solid #fbfbfb;
+    padding: 10px; /* Increased padding for larger text */
+    border-radius: 10px; /* Rounded corners for a sleek look */
+    margin: 10px; /* Increased margin for spacing */
+
+    /* Change the font */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* Align text to the center of the page */
+    text-align: center;
+}
+
+.countdown-title {
+    /* align text to the center of the page */
+    text-align: center;
+    font-size: 30px; /* Increased font size for larger text */
+    margin-bottom: 20px; /* Increased margin for spacing */
+    color: #401aa0;
+
+    /* Add a border to the title */
+    border: 2px solid #fbfbfb;
+    padding: 10px; /* Increased padding for larger text */
+    border-radius: 10px; /* Rounded corners for a sleek look */
+
+    /* Change the font */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-label {
+    display: block;
+    font-weight: bold;
+}
+
+.voter-registration {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #442565, #6a4fb0, #9a7fd1);
+    color: white;
+    border-radius: 10px;
+}
+
+.voter-registration h2 {
+    margin-bottom: 10px;
+}
+
+.voter-registration ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.voter-registration ul li {
+    margin-bottom: 5px;
+}
+
+.voter-registration a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.voter-registration a:hover {
+    text-decoration: underline;
+}
+
+.countdown-timer {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for text */
+    color: #fbfbfb;
+    padding: 50px; /* Increased padding for larger text */
+    border-radius: 10px; /* Rounded corners for a sleek look */
+    font-size: 48px; /* Increased font size for larger text */
+}
+
+.countdown-timer span {
+    background: linear-gradient(135deg, #442565, #402b76, #20035a);
+    border-radius: 4px;
+    padding: 20px; /* Adjusted padding for larger text */
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.countdown-label {
+    display: block;
+    font-weight: lighter;
+}
+
+.h1 {
+    font-size: 48px; /* Increased font size for larger text */
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+.countdown-item {
+    text-align: center;
+    margin: 0 15px; /* Increased margin for spacing */
+    font-size: 36px; /* Increased font size for larger text */
+    padding-top: none; /* Removed padding for a sleek look */
+}
+
+.counter-type h1 {
+    /* Add a border to the h1 tags */
+    border: 2px solid #fbfbfb;
+}
+
+.countdown-timer span:first-child {
+    margin-left: 0;
+    margin-bottom: 2em;
+}
+
+.countdown-timer span:first-child {
+    margin-left: 0;
+    margin-bottom: 2em; ;
+}
+
+/* Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+    .countdown-title {
+        font-size: 24px;
+        padding: 0px;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+        padding: 0px;
+        font-size: 24px;
+    }
+
+    .countdown-item {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+
+    .countdown-timer span {
+        padding: 10px;
+    }
+
+    .voter-registration {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .voter-registration h2 {
+        font-size: 18px;
+    }
+
+    .voter-registration ul li {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .countdown-title {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+        padding: 30px;
+        font-size: 32px;
+    }
+
+    .countdown-item {
+        margin: 10px 0;
+        font-size: 32px;
+    }
+
+    .countdown-timer span {
+        padding: 15px;
+    }
+
+    .voter-registration {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .voter-registration h2 {
+        font-size: 20px;
+    }
+
+    .voter-registration ul li {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (Landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .countdown-title {
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    .countdown-timer {
+        flex-direction: row;
+        padding: 40px;
+        font-size: 36px;
+    }
+
+    .countdown-item {
+        margin: 10px 15px;
+        font-size: 36px;
+    }
+
+    .countdown-timer span {
+        padding: 20px;
+    }
+
+    .voter-registration {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .voter-registration h2 {
+        font-size: 22px;
+    }
+
+    .voter-registration ul li {
+        font-size: 18px;
+    }
+}
+
+/* Desktops and Laptops */
+@media (min-width: 1025px) {
+    .countdown-title {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .countdown-timer {
+        flex-direction: row;
+        padding: 50px;
+        font-size: 48px;
+    }
+
+    .countdown-item {
+        margin: 0 15px;
+        font-size: 36px;
+    }
+
+    .countdown-timer span {
+        padding: 20px;
+    }
+
+    .voter-registration {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .voter-registration h2 {
+        font-size: 24px;
+    }
+
+    .voter-registration ul li {
+        font-size: 20px;
+    }
+}
