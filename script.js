@@ -1,30 +1,39 @@
 // Change the target end time to November 5th, 2024
-const countdownEnd = new Date("Nov 5, 2024 23:59:59").getTime();
+const targetDate = new Date(2024, 10, 5, 0, 0, 0).getTime(); // November 5, 2024, at 00:00:00
 
-
+// Function to calculate and update the countdown timer
 function updateCountdown() {
     const now = new Date().getTime();
-    const distance = countdownEnd - now;
+    const timeRemaining = targetDate - now;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    document.querySelector(".countdown-days").textContent = days;
-    document.querySelector(".countdown-hours").textContent = hours;
-    document.querySelector(".countdown-minutes").textContent = minutes;
-    document.querySelector(".countdown-seconds").textContent = seconds;
+    // Update the countdown display
+    document.querySelector("#days-label").textContent = days;
+    document.querySelector("#hours-label").textContent = hours;
+    document.querySelector("#minutes-label").textContent = minutes;
+    document.querySelector("#seconds-label").textContent = seconds;
 
-    if (distance < 0) {
-        clearInterval(countdownInterval);
-        document.querySelector(".countdown-timer").textContent = "TIME'S UP!";
+    // If the countdown is finished, display a message
+    if (timeRemaining < 0) {
+        clearInterval(timerInterval);
+        document.getElementById("countdown-timer").innerHTML = "Its Election Time. Go Vote!";
     }
 }
 
+// Update the countdown every second
+const timerInterval = setInterval(updateCountdown, 1000);
+
+// Initial call to display the countdown immediately
+updateCountdown();
+// Fetch a random background image from Unsplash
 document.addEventListener('DOMContentLoaded', function() {
     const apiKey = 'ISOr4v9ufq8OH0-8Ss_UYMq9p4-73vWbpFTYVFfq_II';
-    const url = `https://api.unsplash.com/photos/random?client_id=${apiKey}&query=American+Politics+Kamala&orientation=landscape`;
+    const url = `https://api.unsplash.com/photos/random?client_id=${apiKey}&query=American%20Flag&orientation=landscape`;
 
     fetch(url)
         .then(response => response.json())
@@ -35,5 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error fetching the image:', error));
 });
 
+// Start the countdown interval
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();

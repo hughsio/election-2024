@@ -3,30 +3,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oqd3gdl.css">
+
 </head>
 <body>
-    <div>
-        <h1 class="countdown-title"> 🇺🇸 2024 Presidential Elections Countdown 🇺🇸</h1>
-        <div class="countdown-timer">
-            <div class="countdown-item">
-                <span class="countdown-label">Days:</span>
-                <span class="countdown-days">00</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-label">Hrs:</span>
-                <span class="countdown-hours">00</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-label">Mins:</span>
-                <span class="countdown-minutes">00</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-label">Secs:</span>
-                <span class="countdown-seconds">00</span>
+    <div class="container">        
+
+        <div class="countdown-container">
+            <h1 class="countdown-title"> 🇺🇸 2024 Presidential Elections Countdown 🇺🇸</h1>
+            <div id="counter">
+                <div id="countdown-timer">
+                    <!-- Days Section -->
+                    <div class="countdown-days">
+                        <span class="countdown-label" id="days-label">72</span>
+                        <span class="countdown-text" id="days-text">Days</span>
+                    </div>
+                    <!-- Hours Section -->
+                    <div class="countdown-section">
+                        <span class="countdown-label" id="hours-label">1</span>
+                        <span class="countdown-text" id="hours-text">Hour</span>
+                    </div>
+                    <!-- Minutes Section -->
+                    <div class="countdown-section">
+                        <span class="countdown-label" id="minutes-label">41</span>
+                        <span class="countdown-text" id="minutes-text">Minutes</span>
+                    </div>
+                    <!-- Seconds Section -->
+                    <div class="countdown-section">
+                        <span class="countdown-label" id="seconds-label">49</span>
+                        <span class="countdown-text" id="seconds-text">Seconds</span>
+                    </div>
+                </div>
+                <div id="countdown-days-suffix">to go</div>
             </div>
         </div>
         
-        <!-- Voter Registration Information -->
         <div class="voter-registration">
             <h2>Voter Registration Information</h2>
             <p>Make sure you are registered to vote in the upcoming elections. Check your registration status and register online using the links below:</p>
@@ -35,7 +46,6 @@
                 <li><a href="https://www.vote.org/am-i-registered-to-vote/" target="_blank">Check Registration Status</a></li>
             </ul>
         </div>
-        
-        <script src="script.js"></script>
-        </body>
-        </html>
+    </div>
+    
+    <script src="script.js"></script>
