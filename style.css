@@ -137,6 +137,10 @@ body {
         font-size: 36px;
     }
 
+    .countdown-text {
+        font-size: 24px;
+    }
+
     .countdown-section {
         flex-direction: column;
     }
@@ -144,10 +148,14 @@ body {
     .voter-registration {
         padding: 10px;
         margin-top: 10px;
+        border-radius: 0%;
     }
 
     .voter-registration h2 {
         font-size: 18px;
+        font-family: "area-normal", sans-serif;
+        font-weight: 300;
+        font-style: normal;
     }
 
     .voter-registration ul li {
