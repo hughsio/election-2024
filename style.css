@@ -13,10 +13,32 @@ body {
     display: grid;
 }
 
-.countdown-container {
-    background-color: rgba(81, 66, 66, 0.301);
-    padding: 20px;
-    border-radius: 10px;
+.h1 {
+    font-size: 48px; /* Increased font size for larger text */
+    margin-bottom: 20px; /* Increased margin for spacing */
+    background-color: rgb(105, 103, 102); /* Added background color for a sleek look */
+
+
+}
+.countdown-item {
+    text-align: center;
+    margin: 0 15px; /* Increased margin for spacing */
+    font-size: 36px; /* Increased font size for larger text */
+    padding-top: none; /* Removed padding for a sleek look */
+}
+
+.counter-type h1 {
+    /* Add a border to the h1 tags */
+    border: 2px solid #fbfbfb;
+    padding: 10px; /* Increased padding for larger text */
+    border-radius: 10px; /* Rounded corners for a sleek look */
+    margin: 10px; /* Increased margin for spacing */
+
+    /* Change the font */
+    font-family: Helvetica;
+
+    /* Align text to the center of the page */
+    text-align: center;
 }
 
 .countdown-title {
@@ -25,12 +47,16 @@ body {
     color: #401aa0;
     background-color: seashell;
     border: 2px solid #fbfbfb;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    font-family: "area-normal", sans-serif;
-    font-weight: 900;
+    padding: 10px; /* Increased padding for larger text */
+    border-radius: 10px; /* Rounded corners for a sleek look */
+
+    /* Change the font */
+    font-family: "noto-sans-oriya", sans-serif;;
+    font-weight: 300;
     font-style: normal;
+    background-color: seashell; /* Added background color for a sleek look */
+
+
 }
 
 #counter {
@@ -163,3 +189,127 @@ body {
     }
 }
 
+/* Tablets (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .countdown-title {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+        padding: 30px;
+        font-size: 32px;
+    }
+
+    .countdown-item {
+        margin: 10px 0;
+        font-size: 32px;
+    }
+
+    .countdown-timer span {
+        padding: 15px;
+    }
+
+    .voter-registration {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .voter-registration h2 {
+        font-size: 20px;
+    }
+
+    .voter-registration ul li {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (Landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .countdown-title {
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    .countdown-timer {
+        flex-direction: row;
+        padding: 40px;
+        font-size: 36px;
+    }
+
+    .countdown-item {
+        margin: 10px 15px;
+        font-size: 36px;
+    }
+
+    .countdown-timer span {
+        padding: 20px;
+    }
+
+    .voter-registration {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .voter-registration h2 {
+        font-size: 22px;
+    }
+
+    .voter-registration ul li {
+        font-size: 18px;
+    }
+}
+
+/* Desktops and Laptops */
+@media (min-width: 1025px) {
+    .countdown-title {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .countdown-timer {
+        flex-direction: row;
+        padding: 50px;
+        font-size: 48px;
+    }
+
+    .countdown-item {
+        margin: 0 15px;
+        font-size: 36px;
+    }
+
+    .countdown-timer span {
+        padding: 20px;
+    }
+
+    .voter-registration {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .voter-registration h2 {
+        font-size: 24px;
+    }
+
+    .voter-registration ul li {
+        font-size: 20px;
+    }
+}
+
+.countdown-wrapper {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Add some spacing between the items */
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column; /* Stack label and value vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.countdown-label, .countdown-days, .countdown-hours, .countdown-minutes, .countdown-seconds {
+    margin: 5px 0; /* Add some spacing between the elements */
+}
