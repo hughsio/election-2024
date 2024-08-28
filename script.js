@@ -1,5 +1,6 @@
 // Change the target end time to November 5th, 2024
-const targetDate = new Date(2024, 10, 5, 0, 0, 0).getTime(); // November 5, 2024, at 00:00:00
+const targetDate = new Date(2024, 10, 4, 23, 0, 0).getTime(); // November 5, 2024, at 00:00:00
+
 
 // Function to calculate and update the countdown timer
 function updateCountdown() {
@@ -43,7 +44,3 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching the image:', error));
 });
-
-// Start the countdown interval
-const countdownInterval = setInterval(updateCountdown, 1000);
-updateCountdown();

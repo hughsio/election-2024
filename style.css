@@ -17,6 +17,7 @@ body {
     font-size: 48px; /* Increased font size for larger text */
     margin-bottom: 20px; /* Increased margin for spacing */
     background-color: rgb(105, 103, 102); /* Added background color for a sleek look */
+    text-align: center; /* Center text horizontally */
 
 
 }
@@ -49,12 +50,12 @@ body {
     border: 2px solid #fbfbfb;
     padding: 10px; /* Increased padding for larger text */
     border-radius: 10px; /* Rounded corners for a sleek look */
-
+    text-align: center; /* Center text horizontally */
     /* Change the font */
     font-family: "noto-sans-oriya", sans-serif;;
     font-weight: 300;
     font-style: normal;
-    background-color: seashell; /* Added background color for a sleek look */
+    background-color: rgba(255, 245, 238, 0.779); /* Added background color for a sleek look */
 
 
 }
@@ -120,7 +121,8 @@ body {
 .voter-registration {
     margin-top: 20px;
     padding: 20px;
-    background: linear-gradient(135deg, #442565, #6a4fb0, #9a7fd1);
+    /* background: linear-gradient(135deg, #bebcc0, #a698cb, #9c98a3); */
+    background-color:rgba(54, 59, 57, 0.428);
     color: white;
     border-radius: 10px;
 }
