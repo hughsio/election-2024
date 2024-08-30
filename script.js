@@ -1,3 +1,21 @@
+function updateDateTime() {
+    const now = new Date();
+    const options = { 
+        weekday: 'short', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+    };
+    const formattedDateTime = now.toLocaleString('en-US', options);
+    document.getElementById('todays-date').textContent = formattedDateTime;
+}
+
+// Update date and time immediately and then every second
+updateDateTime();
+setInterval(updateDateTime, 1000);
+
 // Change the target end time to November 5th, 2024
 const targetDate = new Date(2024, 10, 4, 23, 0, 0).getTime(); // November 5, 2024, at 00:00:00
 
