@@ -17,8 +17,7 @@ updateDateTime();
 setInterval(updateDateTime, 1000);
 
 // Change the target end time to November 5th, 2024
-const targetDate = new Date(2024, 10, 4, 23, 0, 0).getTime(); // November 5, 2024, at 00:00:00
-
+const targetDate = new Date(2024, 10, 5, 0, 0, 0).getTime(); // November 5, 2024, at 00:00:00
 
 // Function to calculate and update the countdown timer
 function updateCountdown() {
@@ -40,7 +39,7 @@ function updateCountdown() {
     // If the countdown is finished, display a message
     if (timeRemaining < 0) {
         clearInterval(timerInterval);
-        document.getElementById("countdown-timer").innerHTML = "Its Election Time. Go Vote!";
+        document.getElementById("countdown-timer").innerHTML = "It's Election Time. Go Vote!";
     }
 }
 
