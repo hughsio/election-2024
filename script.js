@@ -49,16 +49,3 @@ const timerInterval = setInterval(updateCountdown, 1000);
 
 // Initial call to display the countdown immediately
 updateCountdown();
-// Fetch a random background image from Unsplash
-document.addEventListener('DOMContentLoaded', function() {
-    const apiKey = 'ISOr4v9ufq8OH0-8Ss_UYMq9p4-73vWbpFTYVFfq_II';
-    const url = `https://api.unsplash.com/photos/random?client_id=${apiKey}&query=American%20Flag&orientation=landscape`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            const imageUrl = data.urls.full;
-            document.body.style.backgroundImage = `url(${imageUrl})`;
-        })
-        .catch(error => console.error('Error fetching the image:', error));
-});

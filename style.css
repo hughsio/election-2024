@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: full;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -7,7 +7,11 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
     background-color: rgb(175, 174, 174);
-}
+    background-image: url('images/kamala-harris.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
 
 .container {
     display: grid;
