@@ -39,7 +39,8 @@ function updateCountdown() {
     // If the countdown is finished, display a message
     if (timeRemaining < 0) {
         clearInterval(timerInterval);
-        document.getElementById("countdown-timer").innerHTML = "It's Election Time. Go Vote!";
+        const endMessage = "It's Election Time. Go Vote!"; // Customize this message
+        document.getElementById("countdown-timer").innerHTML = `<h1>${endMessage}</h1>`;
     }
 }
 

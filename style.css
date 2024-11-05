@@ -78,6 +78,14 @@ body {
     margin: 10px;
 }
 
+#countdown-timer h1 {
+    font-size: 50px;
+    font-family: "area-normal", sans-serif;
+    color: #ecebe0;
+    font-weight: 200;
+    font-style: normal;
+}
+
 .countdown-section {
     display: inline-flex;
     flex-direction: row;
@@ -107,11 +115,11 @@ body {
 }
 
 #todays-date {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: lighter;
     margin-right: 5px;
     font-family: "area-normal", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
 }
 
